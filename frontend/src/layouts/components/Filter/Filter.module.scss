@@ -1,0 +1,59 @@
+.city-wrapper {
+    position: relative;
+    &:hover .list-city {
+        display: block;
+    }
+}
+.city {
+    cursor: pointer;
+    min-width: 100px;
+    margin-right: 16px;
+    padding: 6px 10px;
+    // background-color: #ccc;
+    // font-size: 1.4rem;
+    // border-radius: 6px;
+    position: relative;
+    z-index: 1;
+
+    // &:hover ~ .list-city {
+    //     display: block;
+    // }
+}
+
+.list-city {
+    z-index: 2;
+    position: absolute;
+    top: calc(100% + 8px);
+    // top: 10%;
+    left: 0;
+    list-style: none;
+    width: 120px;
+    border-radius: 5px;
+    // margin-top: 0.5rem;
+    // padding: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+    // opacity: 0;
+    // pointer-events: none;
+    // transition: opacity 0.2s ease-in-out;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -10%;
+        background-color: transparent;
+        width: 100px;
+        height: 10px;
+        display: block;
+    }
+}
+.item-city {
+    padding: 4px 0px 4px 12px;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.12);
+        cursor: pointer;
+    }
+}

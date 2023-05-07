@@ -1,0 +1,36 @@
+.menu {
+    position: absolute;
+    top: 72px;
+}
+.menu-item {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 16px;
+    color: #404040;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 72px;
+    justify-content: center;
+    margin-top: 4px;
+    width: 72px;
+
+    &.active {
+        background-color: #e8ebed;
+        color: #1a1a1a;
+    }
+
+    &:hover {
+        background-color: #f5f5f5;
+        color: #1a1a1a;
+    }
+}
+.icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 6px;
+}

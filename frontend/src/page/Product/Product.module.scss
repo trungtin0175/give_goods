@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.image {
+    max-height: 420px;
+}
+.img {
+    max-height: 400px;
+    height: 400px;
+    max-width: 600px;
+    min-width: 350px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    padding-right: 30px;
+}
+
+.name {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.info-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.info-title {
+    min-width: 110px;
+}
+.button {
+    margin-top: 20px;
+}
+.icon {
+    padding-right: 4px;
+}
