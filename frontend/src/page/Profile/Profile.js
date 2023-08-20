@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import useAuthStore from '~/store/useAuthStore';
 import { useParams } from 'react-router-dom';
+import images from '~/assets/images';
 
 const cx = classNames.bind(styles);
 function Profile() {
@@ -37,11 +38,7 @@ function Profile() {
             </div>
             <div className={cx('body')}>
                 <div className="image">
-                    <img
-                        className={cx('img')}
-                        src="https://scontent.fsgn2-9.fna.fbcdn.net/v/t1.6435-9/121680021_717238292469579_2635071325374567304_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=3lOcizNxYaEAX8chp4y&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfDrLh_DamyObM4dRIm9XyHIwmHzfs_okOvw63P72_WyTA&oe=6459F1D1"
-                        alt="product"
-                    />
+                    <img className={cx('img')} src={images.logo} alt="product" />
                     <div className={cx('form-group')}>
                         <label htmlFor="myfile" className={cx('form-label')}>
                             Đổi ảnh đại diện của bạn:

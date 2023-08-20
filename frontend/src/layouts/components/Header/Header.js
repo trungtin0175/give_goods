@@ -38,7 +38,7 @@ function Header() {
                                 <img
                                     className={cx('user-avatar')}
                                     alt="Nguyễn Văn B"
-                                    src="https://scontent.fsgn2-9.fna.fbcdn.net/v/t1.6435-9/121680021_717238292469579_2635071325374567304_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=3lOcizNxYaEAX8chp4y&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfDrLh_DamyObM4dRIm9XyHIwmHzfs_okOvw63P72_WyTA&oe=6459F1D1"
+                                    src={images.logo}
                                 />
                             </Link>
                             <Button primary onClick={handleLogout}>
